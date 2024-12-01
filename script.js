@@ -1,6 +1,10 @@
 let humanScore = 0;
 let computerScore = 0;
 
+function getRandomInt(max) {
+  return Math.floor(Math.random() * max);
+}
+
 function getComputerChoice() {
   let choice = getRandomInt(3);
   switch (choice) {
@@ -17,7 +21,7 @@ function getHumanChoice() {
   let choice =
       prompt('Enter your choice: rock, paper, or scissors').toLowerCase();
 
-  while (choice === 'rock' || choice === 'paper' || choice === 'scissors') {
+  while (choice !== 'rock' && choice !== 'paper' && choice !== 'scissors') {
     choice =
         prompt('Invalid choice. Enter your choice: rock, paper, or scissors')
             .toLowerCase();
