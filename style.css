@@ -18,3 +18,24 @@ button {
 button:hover {
     background-color: #45a049;
 }
+
+a {
+    text-decoration: none;
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: "comic sans ms";
+    
+}
+
+#tryAgainButton {
+    margin-top: 20px;
+    padding: 10px;
+    border: none;
+    background-color: lightseagreen;
+    color: white;
+    border-radius: 10px;
+}
